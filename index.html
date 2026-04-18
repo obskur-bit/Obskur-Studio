@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- PWA -->
+    <meta name="theme-color" content="#060608" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="OBSKUR" />
+
+    <!-- Apple touch icons -->
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512.png" />
+
+    <!-- Splash screen color -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- SEO minimal -->
+    <title>OBSKUR Content Studio</title>
+    <meta name="description" content="Outil de gestion de contenu social media pour OBSKUR. Built in tension." />
+
+    <!-- Prevent zoom on inputs (important mobile UX) -->
+    <style>
+      * { -webkit-text-size-adjust: 100%; }
+      input, textarea, select { font-size: 16px !important; }
+      body { margin: 0; overscroll-behavior: none; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
